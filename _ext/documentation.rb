@@ -64,7 +64,7 @@ module JBoss
                 end
 
                 sections << OpenStruct.new({
-                  :content=>content,
+                  :content=>content.css('body').first.children.to_s,
                   :number=>number.gsub(/\.0/, ' '),
                   :subsection=>subsection,
                   :id=>id,
