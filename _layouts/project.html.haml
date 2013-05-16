@@ -12,7 +12,7 @@
     /[if lt IE 9]
       %script(src="#{site.jborg_js_url}/libs/html5/pre3.6/html5.min.js")
     :javascript
-      window.jQuery || document.write( '<script src="#{site.jborg_js_url}/libs/jquery/1.9.1/jquery#{site.minified}.js"><\/script>' )
+      window.jQuery || document.write( '<script src="#{site.base_url}/javascripts/jquery-1.7.2.min.js"><\/script>' )
 
     - if page.javascripts
       - page.javascripts.each do |javascript|
