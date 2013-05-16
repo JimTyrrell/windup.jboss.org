@@ -53,13 +53,13 @@ module JBoss
                 end
 
                 content.css('h2').each do |header_html|
-                  sub_id = header_html.inner_html.gsub(/ /, '-').gsub(/\?/,'').gsub(/\./, '-').gsub(/\!/, '').gsub(/:/, '-')
+                  sub_id = header_html['id']
                   toc.last.children << OpenStruct.new({
                     :text=>header_html.inner_html,
                     :link_id=>sub_id,
                     :subsection=>true
                   })
-                  header_html.inner_html = "<a id=\"#{sub_id}\">#{header_html.inner_html}</a>"
+                  header_html.inner_html = "<a name=\"#{sub_id}\" class=\"nolink\">#{header_html.inner_html}</a>"
                   ids << sub_id
                 end
 

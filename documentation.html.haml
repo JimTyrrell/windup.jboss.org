@@ -1,19 +1,19 @@
 ---
 layout: project-nav 
 ---
-- page.bottom_javascripts = [ "#{site.base_url}/javascripts/jquery-scroll.js" ]
+- page.bottom_javascripts = [ "#{site.base_url}/javascripts/site.js", "#{site.base_url}/javascripts/jquery-scroll.js"]
 
 .row
   .span8
-    #guide
+    #guide.asciidoc
       - site.documentation.sections.each do |section|
         - if not section.subsection
-          %h1
-            %a{:id=>section.id}
+          %h1{:id=>section.id}
+            %a.nolink{:name=>section.id}
               #{section.number} #{section.title}
         - else 
-          %h2
-            %a{:id=>section.id}
+          %h2{:id=>section.id}
+            %a.nolink{:name=>section.id}
               #{section.number} #{section.title}
 
         #section

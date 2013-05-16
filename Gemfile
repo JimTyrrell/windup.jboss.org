@@ -7,6 +7,7 @@ gem 'html_press', '~> 0.8.1'	# Compressing HTML
 gem 'less', '~> 2.3.2'		# Invoke the Less CSS compiler from Ruby
 gem 'therubyracer', '~> 0.11.4'	# Call JavaScript code and manipulate JavaScript objects from Ruby and vice versa
 gem 'rdiscount', '~> 2.0.7.2'	# Fast implementation of Gruber's Markdown in C
+gem 'asciidoctor', '~> 0.1.1'
 
 group :development do
   gem 'rb-inotify', :require => false
