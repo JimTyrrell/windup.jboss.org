@@ -9,7 +9,7 @@ require 'file_merger'
 require 'compass_config'
 
 Awestruct::Extensions::Pipeline.new do
-  extension JBoss::Windup::Awestruct::Extensions::Documentation.new('/windup.wiki', '.adoc')
+  extension JBoss::Windup::Awestruct::Extensions::Documentation.new('/docs', '.adoc')
   extension JBoss::Windup::Awestruct::Extensions::Report.new('sample')
   extension JBoss::Windup::Awestruct::Extensions::Nav.new
   helper Awestruct::Extensions::Partial

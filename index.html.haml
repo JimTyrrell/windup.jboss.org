@@ -1,24 +1,25 @@
 ---
 layout: project-nav
 ---
-%h1 Taking the guesswork out of migrations
+%h1 Take the guesswork out of migrations
 :markdown
   Windup is a tool to simplify Java application migrations. The tool analyzes application artifacts (such as Java code, JSPs and XML) and produces an HTML report highlighting areas that require changes. The analyzer is driven by customizable and extendable rules to provide as much information as required to assist developers in migrating applications. Its initial focus is Java EE application migrations (from Websphere and Weblogic to JBoss EAP) but the Windup design and rule organization is general enough to allow Windup to be used for practically any kind of migration and any language.
 
 .row
   .span12.windup.screenshot.pagination-centered
     .above-screenshot
-      %a.btn.btn-large(href="http://download.jboss.org/windup/windup-cli-0.6.8.zip") Get it now! 
+      %a.btn.btn-inverse.btn-large(href="http://download.jboss.org/windup/windup-cli-0.6.8.zip") Get it now! 
     %img.img-polaroid(src="images/windup_screenshot.png")
 
 %br
 
-%ul.thumbnails
-  %li.span6
-    %iframe.hidden-phone.thumbnail(width="400" height="225" src="http://www.youtube.com/embed/L9E2C3L994c" frameborder="0" allowfullscreen)
-  %li.span6
-    .pull-right
-      %iframe.hidden-phone.thumbnail(width="400" height="225" src="http://www.youtube.com/embed/NwbTmWxZ3XI" frameborder="0" allowfullscreen)
+.row.thumbnails
+  .offset1.span4.thumbnail
+    .flex-video
+      %iframe(src="http://www.youtube.com/embed/NwbTmWxZ3XI" frameborder="0" allowfullscreen)
+  .offset2.span4.thumbnail
+    .flex-video
+      %iframe(src="http://www.youtube.com/embed/L9E2C3L994c" frameborder="0" allowfullscreen)
 
 %h1 How does it work?
 :markdown
