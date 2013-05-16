@@ -26,11 +26,9 @@
   }
 }
 
-.nolink {
-  a:hover, a:active {
-    text-decoration: none;
-  }
-
+a.nolink:hover {
+  text-decoration: none;
+  color: @linkColor; 
 }
 
 /* Override AsciiDoc default */
@@ -39,6 +37,11 @@
 
   .listingblock pre {
     padding-top: 0em;
+    .title {
+      position:relative;
+      margin: 0px;
+      padding: 0px;
+    }
   }
 
 }

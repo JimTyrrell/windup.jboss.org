@@ -27,7 +27,7 @@ module JBoss
                 content =  Nokogiri::HTML(page.content)
                 relative_path_prefix = @path_prefix[1, @path_prefix.length]
                 content.css('img').each do |img|
-                  if relative? img['src']
+                  if relative? img['src'] and not img['src'] =~ /icons/
                     img['src'] = "#{relative_path_prefix}/#{img['src']}"
                   end
                 end

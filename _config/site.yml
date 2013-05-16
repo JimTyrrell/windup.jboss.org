@@ -6,6 +6,13 @@ css_minifier: disabled
 js_minifier: disabled
 html_minifier: disabled
 
+asciidoctor:
+  :attributes:
+    idprefix: ''
+    idseparator: '-'
+    icons: ''
+    source-highlighter: highlightjs
+
 # Merge multiple JavaScript files to improve performance
 fileMerger:
   enabled: true
