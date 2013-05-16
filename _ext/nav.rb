@@ -29,7 +29,6 @@ module JBoss
               end
             end
             s = OpenStruct.new(r)
-            puts s
             s.href ||= href
             if s.href !~ /^http[s]?:\/\//
               s.href = site.base_url + s.href

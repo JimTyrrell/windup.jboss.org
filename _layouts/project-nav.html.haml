@@ -13,7 +13,7 @@ layout: project
       .nav-collapse.collapse
         %ul.nav
           - site.nav.each do |key, nav|
-            %li{:class=>"#{'active' if nav.href.match(/#{page.output_path}/)}", :blah=>page.output_path, :blah1=>nav.href}<
+            %li{:class=>"#{'active' if nav.href.match(/#{page.output_path}/)}"}<
               %a{:href=>"#{nav.href}"} #{nav.label}
           %li.dropdown
             %a.dropdown-toggle(href="#" data-toggle="dropdown")<
