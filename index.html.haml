@@ -11,6 +11,15 @@ layout: project-nav
       %a.btn.btn-large(href="http://download.jboss.org/windup/windup-cli-0.6.8.zip") Get it now! 
     %img.img-polaroid(src="images/windup_screenshot.png")
 
+%br
+
+%ul.thumbnails
+  %li.span6
+    %iframe.hidden-phone.thumbnail(width="400" height="225" src="http://www.youtube.com/embed/L9E2C3L994c" frameborder="0" allowfullscreen)
+  %li.span6
+    .pull-right
+      %iframe.hidden-phone.thumbnail(width="400" height="225" src="http://www.youtube.com/embed/NwbTmWxZ3XI" frameborder="0" allowfullscreen)
+
 %h1 How does it work?
 :markdown
   Windup is comprised of resource interrogators. These interrogators look for common resources and highlight technologies and known “trouble spots” in migrating applications. The goal of Windup is to provide a high level view into relevant technologies in use within the application, and provide a consumable report for organizations to estimate, document, and migrate JEE applications to JBoss.
@@ -32,3 +41,4 @@ layout: project-nav
     %tr
       %td XML Interrogator
       %td Reads XML files; reads the XML into a DOM object and continues to profile the resource.
+
