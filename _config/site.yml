@@ -59,6 +59,7 @@ wget:
 # Update resource URLs based on the profile
 profiles:
   development:
+    metrics_base_url:  http://www.qa.redhat.com
     jborg_fonts_url: /cache/static.jboss.org/theme/fonts
     jborg_images_url: /cache/static.jboss.org/theme/images
     jborg_js_url: /cache/static.jboss.org/theme/js
@@ -67,6 +68,7 @@ profiles:
     base_url:
 
   staging:
+    metrics_base_url:  http://www.stage.redhat.com
     jborg_fonts_url: http://static.jboss.org/theme/fonts
     jborg_images_url: http://static.jboss.org/theme/images
     jborg_js_url: http://static.jboss.org/theme/js
@@ -75,9 +77,11 @@ profiles:
     base_url: http://windup.jboss.org/staging
   production:
     minified: .min
+    metrics_base_url:  http://www.redhat.com
     jborg_fonts_url: http://static.jboss.org/theme/fonts
     jborg_images_url: http://static.jboss.org/theme/images
     jborg_js_url: http://static.jboss.org/theme/js
+    google_analytics: UA-41014823-1
     bootstrap_css_url: http://static.jboss.org/theme/css/community/bootstrap-2.3.1.0
     bootstrap_js_url: http://static.jboss.org/theme/js/community/bootstrap-2.3.1.0
     base_url: http://windup.jboss.org

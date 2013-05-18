@@ -13,11 +13,14 @@ Awestruct::Extensions::Pipeline.new do
   extension JBoss::Windup::Awestruct::Extensions::Report.new('sample')
   extension JBoss::Windup::Awestruct::Extensions::Nav.new
   helper Awestruct::Extensions::Partial
+  helper Awestruct::Extensions::GoogleAnalytics
+
   extension Awestruct::Extensions::WgetWrapper.new
   transformer Awestruct::Extensions::JsMinifier.new
   transformer Awestruct::Extensions::CssMinifier.new
   transformer Awestruct::Extensions::HtmlMinifier.new
   extension Awestruct::Extensions::FileMerger.new
   extension Awestruct::Extensions::CompassConfig.new
+
 end
 
